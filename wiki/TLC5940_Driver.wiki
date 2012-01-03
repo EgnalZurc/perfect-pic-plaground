@@ -1,0 +1,14 @@
+#labels PWM,Timer0,Featured
+18Fx550 based TLC5940 16 channel constant current PWM driver.
+
+= Introduction =
+
+This project showcases the TLC5940 driver written by Simon Inns.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
