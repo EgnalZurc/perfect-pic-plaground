@@ -7,8 +7,9 @@ This project showcases the TLC5940 driver written by Simon Inns.
 
 
 = Details =
-
-[PWM_With_CCP]
+==This project uses the following concepts:==
+  * [PWM_With_CCP]
+  * [USB]
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
