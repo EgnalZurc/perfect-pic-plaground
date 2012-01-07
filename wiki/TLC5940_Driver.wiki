@@ -10,6 +10,8 @@ This project showcases the TLC5940 driver written by Simon Inns.
 ==This project uses the following concepts:==
   * [PWM_With_CCP]
   * [USB]
+  
+	http://code.google.com/p/perfect-pic-plaground/wiki/TLC5940_Driver/tlc5940pinouts.jpg
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
