@@ -70,9 +70,11 @@ void main(void) {
 		
 		setGrayScaleValue(1, brightness);
 		
-		//setGrayScaleValue puts the new brightness values into an array,
+		//setGrayScaleValue puts the new brightness values into an buffer array,
 		//but updateTlc5940 is required to change the LEDs
-		updateTlc5940();
+		//updateTlc5940 returns 0 when update complete
+		
+		while (updateTlc5940() == 1);
 		
 		//Smoothly increase brightness to maximum and then dim to minimum
 		if (fade)
