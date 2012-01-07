@@ -1,4 +1,5 @@
 #summary Measuring capacitance using RC timer
+#labels 18F4550
 
 = Introduction =
 
