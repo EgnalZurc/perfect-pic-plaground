@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary 4 Channel DC, 2 channel stepper serial controlled motor driver.
 #labels PWM,MSSP
 
 = Introduction =
