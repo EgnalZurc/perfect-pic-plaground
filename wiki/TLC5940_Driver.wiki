@@ -1,4 +1,4 @@
-#labels PWM,Timer0,Featured
+#labels PWM,Timer0,Featured,18F2550
 18Fx550 based TLC5940 16 channel constant current PWM driver.
 
 = Introduction =
