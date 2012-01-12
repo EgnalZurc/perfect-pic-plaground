@@ -45,24 +45,47 @@ void configSystem(void){
 	ADCON1 = 0x0F;	
 }
 
+void configI2C(void){
+	//Config Inputs
+	TRISB |= 1 << 0;
+	TRISB |= 1 << 1;
+
+	//SSPSTAT - Disable Slew Rate Control
+	SSPSTAT |= 1 << 7;
+	//SSPCON
+		//Enable Serial port/relase clock/ enable 7bit i2c with start/stop interupts
+	SSPCON1 = 0b00111110;
+		//Enable general call response and enable clock stretching
+	SSPCON2 |= 1 << 7;
+	SSPCON2 |= 1 << 0;
+	SSPADD = 0x10;
+	//PIR1
+	//PIE1
+
+}
+
 
 void main(void) {
 	char down = 0;
 	configSystem();
 	configSoftPWM();
+	configI2C();
 	
 	while (1) {
+#ifdef debug
 		while (!down){
 			dutyCycle1++;
 			dutyCycle2--;
-			__delay_ms(30);
+			__delay_ms(1);
 			if (dutyCycle1 > 62) down = 1;
 		}
 		while (down){
 			dutyCycle1--;
 			dutyCycle2++;
-			__delay_ms(30);
+			__delay_ms(1);
 			if (dutyCycle1 < 1) down = 0;
 		}
+#endif
+	//	dutyCycle1 = i2c_rx_buff[0];
 	}
 }	
