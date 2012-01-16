@@ -1,7 +1,7 @@
 #include <htc.h>
 
 #define ATT RC7
-#define CLK RB0
+#define CLK RB3
 
 #define _XTAL_FREQ 48000000
 
@@ -11,7 +11,10 @@
 // PIC 18F4550 fuse configuration:
 // Config word 1 (Oscillator configuration)
 // 20Mhz crystal input scaled to 48Mhz and configured for USB operation
-__CONFIG(1, USBPLL & IESODIS & FCMDIS & HSPLL & CPUDIV1 & PLLDIV5);
+// The problem with the slow clock is because of the PLLDIV register. I don't
+// have a scope on hand so I can't verify what is the correct setting, but
+// reducing it allows you to acheive a faster pin toggle (~3MHz for me)
+__CONFIG(1, USBPLL & IESODIS & FCMDIS & HSPLL &  CPUDIV1 & PLLDIV3);
 // Config word 2
 __CONFIG(2, VREGEN & PWRTDIS & BOREN & BORV20 & WDTDIS & WDTPS32K);
 // Config word 3
@@ -27,9 +30,7 @@ bit on;
 
 interrupt isr(void) {
 	if (TMR2IF) {
-		CLK = on;
-		on = !on;
-		TMR2 = 0;
+		RB3 = !RB3;
 		TMR2IF = 0;
 	}
 }	
@@ -53,19 +54,15 @@ void main(void) {
 //	TMR0L = 255-1;
 //	TMR0IE = 1;
 //	TMR0ON = 1;
-
+//
 //	T2CON = 0b00000100;
-//	PR2 = 2;
+//	PR2 = 1;
 //	TMR2IE = 1;
-	
-	GIE = 1;
-	PEIE = 1;
+//
+//	GIE = 1;
+//	PEIE = 1;
 	
 	while (1){
-		CLK = on;
-		on = !on;
-		__delay_us(1);
-		on = !on;
-		on = !on;
+		RB3 = !RB3;
 	}	
 }
