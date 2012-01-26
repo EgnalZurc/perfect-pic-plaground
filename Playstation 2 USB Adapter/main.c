@@ -1,41 +1,41 @@
 #include <htc.h>
 
-#define ATT RC7
-#define CLK RB3
-
 #define _XTAL_FREQ 48000000
 
-#define ON 1
-#define OFF 0
-
-// PIC 18F4550 fuse configuration:
-// Config word 1 (Oscillator configuration)
-// 20Mhz crystal input scaled to 48Mhz and configured for USB operation
-// The problem with the slow clock is because of the PLLDIV register. I don't
-// have a scope on hand so I can't verify what is the correct setting, but
-// reducing it allows you to acheive a faster pin toggle (~3MHz for me)
-__CONFIG(1, USBPLL & IESODIS & FCMDIS & HSPLL &  CPUDIV1 & PLLDIV3);
-// Config word 2
-__CONFIG(2, VREGEN & PWRTDIS & BOREN & BORV20 & WDTDIS & WDTPS32K);
-// Config word 3
-__CONFIG(3, PBDIGITAL & LPT1DIS & MCLREN);
-// Config word 4
-__CONFIG(4, XINSTDIS & STVREN & LVPDIS & ICPORTDIS & DEBUGDIS);
+// PIC 18F4550 fuse configuration Updated to use non-deprecated macro
+// Constants can be found in %HTCROOT%/docs/%PICMODEL% on computer
+// Oscillator Block
+#pragma config CPUDIV = OSC1_PLL2, PLLDIV = 5, USBDIV = 2, IESO = OFF, FOSC = HSPLL_HS, FCMEN = OFF
+// Core Peripheral Block
+#pragma config VREGEN = OFF, BOR = OFF, PWRT = OFF, WDT = OFF
+// Peripheral Block
+#pragma config PBADEN = OFF, LPT1OSC = OFF, MCLRE = ON
+#pragma config DEBUG = OFF, STVREN = ON, LVP = OFF, XINST = OFF
 // Config word 5, 6 and 7 (protection configuration)
 __CONFIG(5, UNPROTECT);
 __CONFIG(6, UNPROTECT);
 __CONFIG(7, UNPROTECT);
 
-bit on;
+/** DO NOT FUCK WITH THIS STUFF YET!!! **/
+//I tried to disable code protection and I ended up write-protecting one of my PICs
+//If you can figure this out please let me know
+//// Code Protection
+//#pragma config CP0 = OFF, CP1 = OFF, CP2 = OFF, CP3 = OFF, CPD = OFF, CPB = OFF
+//// Write Protection
+//#pragma config WRT0 = OFF, WRT1 = OFF, WRT2 = OFF, WRT3 = OFF, WRTB = OFF, WRTC = OFF, WRTD = OFF
+//// Table Read Protection
+//#pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF, EBTRB = OFF
 
-interrupt isr(void) {
-	if (TMR2IF) {
-		RB3 = !RB3;
-		TMR2IF = 0;
-	}
-}	
+// Initialize PWM @ 12MHz (fastest possible - PWMduty = [PR2 + 1]*4*Fosc*TMR2prescale)
+void initPWM(void){
+	PR2 = 0x00;
+    T2CON = 0b00000100;
+	CCPR1L = 0x00;
+	//Enable PWM
+	CCP1CON = 0b00111100;
+}
 
-void main(void) {
+void init(void){
 	TRISA = 0x00;
 	TRISB = 0x00;
 	TRISC = 0x00;
@@ -43,26 +43,19 @@ void main(void) {
 	PORTA = 0x00;
 	PORTB = 0x00;
 	PORTC = 0x00;
-	
-	on = ON;
-	
-	//250KHz clock signal=>500KHz timer to switch high and low
-	//fosc/4=12MHz, so scale clock by 24
-	
-//	T0CON = 0b11001000;
-//
-//	TMR0L = 255-1;
-//	TMR0IE = 1;
-//	TMR0ON = 1;
-//
-//	T2CON = 0b00000100;
-//	PR2 = 1;
-//	TMR2IE = 1;
-//
-//	GIE = 1;
-//	PEIE = 1;
-	
+
+	ADCON1 = 0x0f;
+	initPWM();
+}
+
+void main(void) {
+	init();
 	while (1){
-		RB3 = !RB3;
+		// The core should be running @ 48MHz but this one instruction cycle seems to indicate 
+		// it is running at 4MHz (2MHz frequency on pin) but this can't be the case as the PWM
+		// cannot be running any faster than Fosc/4, in this case 12MHz.
+		#asm
+			BTG PORTB, 0
+		#endasm
 	}	
 }
