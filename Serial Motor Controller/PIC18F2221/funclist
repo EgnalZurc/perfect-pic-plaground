@@ -1,0 +1,9 @@
+_setupOsc: CODE, 1098 0 40
+_main: CODE, 706 0 272
+_configTimer: CODE, 1202 0 20
+_isr: CODE, 8 0 694
+_configSystem: CODE, 1138 0 40
+_configSoftPWM: CODE, 1178 0 24
+_configI2C: CODE, 1222 0 20
+_readADC: CODE, 978 0 70
+Total: 1180

@@ -1,0 +1,397 @@
+[p LITE_MODE AUTOSTATIC LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2221 ]
+"2928 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\include\pic18f2221.h
+"1887
+"2685
+"7 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\softPWM.c
+[v F4043 `(v  1 t 0 ]
+"5 ../../common/abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"32 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\abtofl.c
+[v ___abtofl `(d  1 e 3 0 ]
+"34 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"37 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\altofl.c
+[v ___altofl `(d  1 e 3 0 ]
+"43 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asfladd.c
+[v ___asfladd `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asfldiv.c
+[v ___asfldiv `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asflmul.c
+[v ___asflmul `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asflsub.c
+[v ___asflsub `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asftadd.c
+[v ___asftadd `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asftdiv.c
+[v ___asftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asftmul.c
+[v ___asftmul `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\asftsub.c
+[v ___asftsub `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\aslmul.c
+[v ___aslmul `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\attofl.c
+[v ___attofl `(d  1 e 3 0 ]
+"38 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\awtofl.c
+[v ___awtofl `(d  1 e 3 0 ]
+"33 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"64 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\double.c
+[v ___flpack `(d  1 e 3 0 ]
+"89 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\fladd.c
+[v ___fladd `(d  1 e 3 0 ]
+"50 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\fldiv.c
+[v ___fldiv `(d  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\flge.c
+[v ___flge `(b  1 e 0 0 ]
+"51 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\flmul.c
+[v ___flmul `(d  1 e 3 0 ]
+"16 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\flneg.c
+[v ___flneg `(d  1 e 3 0 ]
+"63 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"22 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\flsub.c
+[v ___flsub `(d  1 e 3 0 ]
+"44 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\fltol.c
+[v ___fltol `(l  1 e 4 0 ]
+"87 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"22 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lbtofl.c
+[v ___lbtofl `(d  1 e 3 0 ]
+"28 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"31 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lltofl.c
+[v ___lltofl `(d  1 e 3 0 ]
+"36 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lttofl.c
+[v ___lttofl `(d  1 e 3 0 ]
+"31 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lwtofl.c
+[v ___lwtofl `(d  1 e 3 0 ]
+"29 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+"6 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\ADC.c
+[v _configADC `(v  1 e 0 0 ]
+"24
+[v _adcOff `(v  1 e 0 0 ]
+"32
+[v _runADC `(v  1 e 0 0 ]
+"45
+[v _readADC `(uc  1 e 1 0 ]
+"16 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\main.c
+[v _setupOsc `(v  1 e 0 0 ]
+"35
+[v _configSystem `(v  1 e 0 0 ]
+"54
+[v _configI2C `(v  1 e 0 0 ]
+"75
+[v _runStressTest `(v  1 e 0 0 ]
+"94
+[v _runTest `(v  1 e 0 0 ]
+"99
+[v _main `(v  1 e 0 0 ]
+"7 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\softPWM.c
+[v _isr `I(v  1 e 0 0 ]
+"117
+[v _configSoftPWM `(v  1 e 0 0 ]
+"136
+[v _configTimer `(v  1 e 0 0 ]
+"17 C:\Program Files (x86)\HI-TECH Software\PICC-18\9.80\include\pic18f2221.h
+[v _PORTA `Vuc  1 e 1 @3968 ]
+"88
+[v _PORTB `Vuc  1 e 1 @3969 ]
+"137
+[v _PORTC `Vuc  1 e 1 @3970 ]
+"474
+[v _TRISA `Vuc  1 e 1 @3986 ]
+"537
+[v _TRISB `Vuc  1 e 1 @3987 ]
+"600
+[v _TRISC `Vuc  1 e 1 @3988 ]
+"1530
+[v _ADCON2 `Vuc  1 e 1 @4032 ]
+"1553
+[v _ADCON1 `Vuc  1 e 1 @4033 ]
+"1586
+[v _ADCON0 `Vuc  1 e 1 @4034 ]
+"1653
+[v _ADRESL `Vuc  1 e 1 @4035 ]
+"1665
+[v _ADRESH `Vuc  1 e 1 @4036 ]
+"1677
+[v _SSPCON2 `Vuc  1 e 1 @4037 ]
+"1704
+[v _SSPCON1 `Vuc  1 e 1 @4038 ]
+"1726
+[v _SSPSTAT `Vuc  1 e 1 @4039 ]
+"1833
+[v _SSPADD `Vuc  1 e 1 @4040 ]
+"1845
+[v _SSPBUF `Vuc  1 e 1 @4041 ]
+[s S96 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"1884
+[s S100 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[s S108 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S114 . 1 `S96 1 . 1 0 `S100 1 . 1 0 `S108 1 . 1 0 ]
+[v _T2CONbits `VS114  1 e 1 @4042 ]
+"1887
+[v _PR2 `Vuc  1 e 1 @4043 ]
+"2041
+[v _WDTCON `Vuc  1 e 1 @4049 ]
+"2129
+[v _OSCCON `Vuc  1 e 1 @4051 ]
+[s S246 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"2175
+[s S253 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 T016BIT 1 0 :1:6 
+]
+[u S259 . 1 `S246 1 . 1 0 `S253 1 . 1 0 ]
+[v _T0CONbits `VS259  1 e 1 @4053 ]
+[s S140 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"2685
+[s S149 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S158 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[s S176 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S185 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S189 . 1 `S140 1 . 1 0 `S149 1 . 1 0 `S158 1 . 1 0 `S140 1 . 1 0 `S176 1 . 1 0 `S185 1 . 1 0 ]
+[v _INTCONbits `VS189  1 e 1 @4082 ]
+"2928
+[v _ACKSTAT `Vb  1 e 0 @32302 ]
+"3092
+[v _CKP `Vb  1 e 0 @32308 ]
+"3210
+[v _GO_nDONE `Vb  1 e 0 @32273 ]
+"3278
+[v _IOFS `Vb  1 e 0 @32410 ]
+"3504
+[v _PEIE `Vb  1 e 0 @32662 ]
+"3516
+[v _PLLEN `Vb  1 e 0 @31966 ]
+"3528
+[v _RA0 `Vb  1 e 0 @31744 ]
+"3530
+[v _RA1 `Vb  1 e 0 @31745 ]
+"3532
+[v _RA2 `Vb  1 e 0 @31746 ]
+"3534
+[v _RA3 `Vb  1 e 0 @31747 ]
+"3536
+[v _RA4 `Vb  1 e 0 @31748 ]
+"3540
+[v _RA6 `Vb  1 e 0 @31750 ]
+"3542
+[v _RA7 `Vb  1 e 0 @31751 ]
+"3546
+[v _RB1 `Vb  1 e 0 @31753 ]
+"3554
+[v _RB5 `Vb  1 e 0 @31757 ]
+"3558
+[v _RB7 `Vb  1 e 0 @31759 ]
+"3584
+[v _RC5 `Vb  1 e 0 @31765 ]
+"3698
+[v _SSPIF `Vb  1 e 0 @31987 ]
+"3710
+[v _SSPOV `Vb  1 e 0 @32310 ]
+"3794
+[v _TMR0IE `Vb  1 e 0 @32661 ]
+"3812
+[v _TMR2IE `Vb  1 e 0 @31977 ]
+"3814
+[v _TMR2IF `Vb  1 e 0 @31985 ]
+"10 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\main.c
+[v _potEnabled `uc  1 e 1 0 ]
+"11
+[v _down `uc  1 e 1 0 ]
+"12
+[v _stressTest `uc  1 e 1 0 ]
+"13
+[v _counter `uc  1 e 1 0 ]
+"15 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\softPWM.h
+[v _pwmCounter `uc  1 e 1 0 ]
+"17
+[v _dutyCycle1 `i  1 e 2 0 ]
+"18
+[v _dutyCycle2 `i  1 e 2 0 ]
+"19
+[v _dutyCycle3 `i  1 e 2 0 ]
+"20
+[v _dutyCycle4 `i  1 e 2 0 ]
+"21
+[v _dutyCycle5 `i  1 e 2 0 ]
+"22
+[v _dutyCycle6 `i  1 e 2 0 ]
+"23
+[v _maxDuty `i  1 e 2 0 ]
+"30
+[v _i2c_buff_index `Vi  1 e 2 0 ]
+"31
+[v _i2c_rx_buff `V[2]uc  1 e 2 0 ]
+"32
+[v _i2c_tx_buff `[2]uc  1 e 2 0 ]
+"33
+[v _newData `b  1 e 0 0 ]
+"35
+[v _v_sspstat `uc  1 e 1 0 ]
+"99 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\main.c
+[v _main `(v  1 e 0 0 ]
+{
+"168
+} 0
+"35
+[v _configSystem `(v  1 e 0 0 ]
+{
+"52
+} 0
+"16
+[v _setupOsc `(v  1 e 0 0 ]
+{
+"33
+} 0
+"54
+[v _configI2C `(v  1 e 0 0 ]
+{
+"72
+} 0
+"117 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\softPWM.c
+[v _configSoftPWM `(v  1 e 0 0 ]
+{
+"134
+} 0
+"136
+[v _configTimer `(v  1 e 0 0 ]
+{
+"151
+} 0
+"45 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\ADC.c
+[v _readADC `(uc  1 e 1 0 ]
+{
+"49
+[v readADC@result `ui  1 a 2 20 ]
+"56
+} 0
+"7 C:\Users\Mike\Desktop\SVN\Serial Motor Controller\PIC18F2221\softPWM.c
+[v _isr `I(v  1 e 0 0 ]
+{
+"102
+[v isr@size `uc  1 a 1 17 ]
+"115
+} 0
