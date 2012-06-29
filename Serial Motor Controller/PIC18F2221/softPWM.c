@@ -149,3 +149,23 @@ void configTimer(void){
 	
 	ei();	
 }
+
+void configI2C(void){
+	//Config Inputs
+	//CLK input, SDA Output
+	TRISC |= 1 << 3;
+	TRISC |= 1 << 4;
+
+	//SSPSTAT - Disable Slew Rate Control
+	SSPSTAT |= 1 << 7;
+	//SSPCON
+		//Enable Serial port/relase clock/ enable 7bit i2c with start/stop interupts
+	SSPCON1 = 0b00111110;
+		//Enable general call response and enable clock stretching
+	SSPCON2 |= 1 << 7;
+	SSPCON2 |= 1 << 0;
+	SSPADD = 0x10;
+	//PIR1
+	//PIE1
+
+}
