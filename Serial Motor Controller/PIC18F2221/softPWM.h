@@ -36,3 +36,4 @@ unsigned char v_sspstat;
 
 void configSoftPWM(void);
 void configTimer(void);
+void configI2C(void);
