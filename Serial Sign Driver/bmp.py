@@ -1,12 +1,10 @@
 import Image
-im = Image.open("C:\\test.bmp")
-imag = list(im.getdata())
 
-n = 8
 rows = []
+#The rows on the marquee blocks are jumbled, and this is the mapping
 roworder = [6, 7, 5, 1, 4, 2, 3, 0]
-colorder = [2, 7, 6, 3, 0, 1, 4, 5]
 
+#Convert array to binary number, LSB first
 def arrayToBinary(array):
     arraybinary = 0
     position = 1
@@ -15,15 +13,7 @@ def arrayToBinary(array):
         position = position*2
     return arraybinary
 
-def rotateRows(imag_rows):
-    new_imag_rows = []
-    for imag_row in imag_rows:
-        new_imag_row = imag_row[n-1:]+imag_row[:n-1]
-        new_imag_rows.append(new_imag_row)
-    #print new_imag_rows
-    return new_imag_rows
-#print imag_rows
-
+#Create binary number for individual rows
 def processRows(imag_rows):
     rows = []
     for imag_row in imag_rows:
@@ -34,10 +24,11 @@ def processRows(imag_rows):
         rows.append(rowbinary)
     return rows
 
-def processRowsPart(imag_rows,index):
+#Create binary number for sections of individual rows
+def processRowsPart(imag_rows,widthSection,index):
     rows = []
     for imag_row in imag_rows:
-        imag_row = imag_row[n*index:n*(index+1)]
+        imag_row = imag_row[widthSection*index:widthSection*(index+1)]
         new_imag_row = [ imag_row[i] for i in roworder ]
         #print imag_row, "->", new_imag_row
         rowbinary = arrayToBinary(new_imag_row)
@@ -45,65 +36,65 @@ def processRowsPart(imag_rows,index):
         rows.append(rowbinary)
     return rows
 
-def makePicturePart(path,ntot,i):
+#Split section of BMP file into pixel rows and process into binary
+def makePicturePart(path,widthTotal,widthSection,sectionIndex):
     im = Image.open(path)
     imag = list(im.getdata())
     imag_rows = []
     while imag:
-        imag_row = imag[:ntot]
+        imag_row = imag[:widthTotal]
         imag_rows.append(imag_row)
-        imag = imag[ntot:]
-    print processRowsPart(imag_rows,i)
+        imag = imag[widthTotal:]
+    print processRowsPart(imag_rows,widthSection,sectionIndex)
 
-def makePicture(path):
+#Split BMP file into pixel rows and process into binary
+def makePicture(path,width):
     im = Image.open(path)
     imag = list(im.getdata())
     imag_rows = []
     while imag:
-        imag_row = imag[:n]
+        imag_row = imag[:width]
         imag_rows.append(imag_row)
-        imag = imag[n:]
+        imag = imag[width:]
     print processRows(imag_rows)
 
-def makeAllPics(path):
-    for i in range(0,5):
-        makePicturePart(path,40,4-i)
+#Take large BMP and partition it into image blocks for multi-block marquees
+def makeAllPics(path, widthTotal, sections):
+    widthSection = widthTotal/sections
+    for i in range(0,sections):
+        makePicturePart(path,widthTotal,widthSection,sections-1-i)
 
-#makePicture("C:\\test.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\H.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\A.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\P.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\P.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\Y.bmp")
+makePicture("C:\\Users\\Public\\Arial_Letters2\H.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\A.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\P.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\P.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\Y.bmp",8)
 print
-makePicture("C:\\Users\\Public\\Arial_Letters2\N.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\E.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\W.bmp")
+makePicture("C:\\Users\\Public\\Arial_Letters2\N.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\E.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\W.bmp",8)
 print
-makePicture("C:\\Users\\Public\\Arial_Letters2\Y.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\E.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\A.bmp")
-makePicture("C:\\Users\\Public\\Arial_Letters2\R.bmp")
+makePicture("C:\\Users\\Public\\Arial_Letters2\Y.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\E.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\A.bmp",8)
+makePicture("C:\\Users\\Public\\Arial_Letters2\R.bmp",8)
 print
-makePicture("C:\\Users\\Public\\Penis\\penis5.bmp")
-makePicture("C:\\Users\\Public\\Penis\\penis4.bmp")
-makePicture("C:\\Users\\Public\\Penis\\penis3.bmp")
-makePicture("C:\\Users\\Public\\Penis\\penis2.bmp")
-makePicture("C:\\Users\\Public\\Penis\\penis1.bmp")
+makePicture("C:\\Users\\Public\\Penis\\penis5.bmp",8)
+makePicture("C:\\Users\\Public\\Penis\\penis4.bmp",8)
+makePicture("C:\\Users\\Public\\Penis\\penis3.bmp",8)
+makePicture("C:\\Users\\Public\\Penis\\penis2.bmp",8)
+makePicture("C:\\Users\\Public\\Penis\\penis1.bmp",8)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_1.bmp")
+makeAllPics("C:\\Users\\Public\\Penis\\penis_1.bmp", 40, 5)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_2.bmp")
+makeAllPics("C:\\Users\\Public\\Penis\\penis_2.bmp", 40, 5)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_3.bmp")
+makeAllPics("C:\\Users\\Public\\Penis\\penis_3.bmp", 40, 5)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_4.bmp")
+makeAllPics("C:\\Users\\Public\\Penis\\penis_4.bmp", 40, 5)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_5.bmp")
+makeAllPics("C:\\Users\\Public\\Penis\\penis_5.bmp", 40, 5)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_6.bmp")
+makeAllPics("C:\\Users\\Public\\Penis\\penis_6.bmp", 40, 5)
 print
-makeAllPics("C:\\Users\\Public\\Penis\\penis_7.bmp")
-
-#new_rows = [ rows[i] for i in colorder ]
-#print new_rows
+makeAllPics("C:\\Users\\Public\\Penis\\penis_7.bmp", 40, 5)
