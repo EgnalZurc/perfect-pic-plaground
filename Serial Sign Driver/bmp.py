@@ -37,7 +37,7 @@ def processRowsPart(imag_rows,widthSection,index):
     return rows
 
 #Rotates each row in the collection of rows
-def rotateEachRowOnce(imag_rows):
+def scrollEachRowOnce(imag_rows):
     new_imag_rows = []
     for imag_row in imag_rows:
         new_imag_row = imag_row[1:] + imag_row[:1]
@@ -60,12 +60,22 @@ def makePicturePart(path,widthTotal,widthSection,sectionIndex):
     imag_rows = splitToRows(imag,widthTotal)
     return processRowsPart(imag_rows,widthSection,sectionIndex)
 
-#Split BMP file into pixel rows and process into binary
-def makePicture(path,width):
+def getPictureRows(path, width):
     im = Image.open(path)
     imag = list(im.getdata())
     imag_rows = splitToRows(imag,width)
-    return processRows(imag_rows)
+    return imag_rows
+
+#Split BMP file into pixel rows and process into binary
+def makePicture(path,width):
+    return processRows(getPictureRows(path, width))
+
+def processBigImage(imag_rows, widthTotal, sections):
+    widthSection = widthTotal/sections
+    sectionList = []
+    for i in range(0,sections):
+        sectionList.append(processRowsPart(imag_rows,widthSection,sections-1-i))
+    return sectionList
 
 #Take large BMP and partition it into image blocks for multi-block marquees
 def makeAllPics(path, widthTotal, sections):
@@ -79,6 +89,14 @@ def makeAnimation(pathList, widthTotal, sections):
     frames = []
     for path in pathList:
         frames.append(makeAllPics(path, widthTotal, sections))
+    return frames
+
+def makeScrollAnimation(path, widthTotal, sections):
+    frames = []
+    imag_rows = getPictureRows("C:\\Users\\Public\\Penis\\penis_1.bmp", widthTotal)
+    for i in range(0,20):
+        frames.append(processBigImage(imag_rows, widthTotal, sections))
+        imag_rows = scrollEachRowOnce(imag_rows)
     return frames
 
 makePicture("C:\\Users\\Public\\Arial_Letters2\H.bmp",8)
@@ -125,3 +143,5 @@ penisPathList = [
     "C:\\Users\\Public\\Penis\\penis_7.bmp"
 ]
 print makeAnimation(penisPathList, 40, 5)
+print
+print makeScrollAnimation("C:\\Users\\Public\\Penis\\penis_1.bmp", 40, 5)
