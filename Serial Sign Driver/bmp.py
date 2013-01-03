@@ -4,6 +4,8 @@ rows = []
 #The rows on the marquee blocks are jumbled, and this is the mapping
 roworder = [6, 7, 5, 1, 4, 2, 3, 0]
 
+#########################Utility Functions####################
+
 #Convert array to binary number, LSB first
 def arrayToBinary(array):
     arraybinary = 0
@@ -12,6 +14,23 @@ def arrayToBinary(array):
         arraybinary = arraybinary + elem*position
         position = position*2
     return arraybinary
+
+#Takes the long list of the image pixels and splits it into individual rows
+def splitToRows(imag,width):
+    imag_rows = []
+    while imag:
+        imag_row = imag[:width]
+        imag_rows.append(imag_row)
+        imag = imag[width:]
+    return imag_rows
+
+def getPictureRows(path, width):
+    im = Image.open(path)
+    imag = list(im.getdata())
+    imag_rows = splitToRows(imag,width)
+    return imag_rows
+
+#########################Rural Functions#######################
 
 #Create binary number for individual rows
 def processRows(imag_rows):
@@ -44,31 +63,15 @@ def scrollEachRowOnce(imag_rows):
         new_imag_rows.append(new_imag_row)
     return new_imag_rows
 
-#Takes the long list of the image pixels and splits it into individual rows
-def splitToRows(imag,width):
-    imag_rows = []
-    while imag:
-        imag_row = imag[:width]
-        imag_rows.append(imag_row)
-        imag = imag[width:]
-    return imag_rows
-
 #Split section of BMP file into pixel rows and process into binary
 def makePicturePart(path,widthTotal,widthSection,sectionIndex):
-    im = Image.open(path)
-    imag = list(im.getdata())
-    imag_rows = splitToRows(imag,widthTotal)
+    imag_rows = getPictureRows(path, widthTotal)
     return processRowsPart(imag_rows,widthSection,sectionIndex)
-
-def getPictureRows(path, width):
-    im = Image.open(path)
-    imag = list(im.getdata())
-    imag_rows = splitToRows(imag,width)
-    return imag_rows
 
 #Split BMP file into pixel rows and process into binary
 def makePicture(path,width):
-    return processRows(getPictureRows(path, width))
+    imag_rows = getPictureRows(path, width)
+    return processRows(imag_rows)
 
 def processBigImage(imag_rows, widthTotal, sections):
     widthSection = widthTotal/sections
@@ -79,10 +82,11 @@ def processBigImage(imag_rows, widthTotal, sections):
 
 #Take large BMP and partition it into image blocks for multi-block marquees
 def makeAllPics(path, widthTotal, sections):
+    imag_rows = getPictureRows(path, widthTotal)
     widthSection = widthTotal/sections
     sectionList = []
     for i in range(0,sections):
-        sectionList.append(makePicturePart(path,widthTotal,widthSection,sections-1-i))
+        sectionList.append(processRowsPart(imag_rows,widthTotal,widthSection,sections-1-i))
     return sectionList
 
 def makeAnimation(pathList, widthTotal, sections):
@@ -91,10 +95,10 @@ def makeAnimation(pathList, widthTotal, sections):
         frames.append(makeAllPics(path, widthTotal, sections))
     return frames
 
-def makeScrollAnimation(path, widthTotal, sections):
+def makeScrollAnimation(path, widthTotal, sections, scrollFrames):
     frames = []
     imag_rows = getPictureRows("C:\\Users\\Public\\Penis\\penis_1.bmp", widthTotal)
-    for i in range(0,20):
+    for i in range(0,scrollFrames):
         frames.append(processBigImage(imag_rows, widthTotal, sections))
         imag_rows = scrollEachRowOnce(imag_rows)
     return frames
