@@ -268,10 +268,6 @@ unsigned char getcUSART ();
 	}
 #endif
 
-void thereWasThisOneTime(void) {
-	thatISawYourMomFuckAGoat(9);
-}
-
 
 
 /** DECLARATIONS ***************************************************/
@@ -625,7 +621,7 @@ void InitializeUSART(void)
         OSCCON = 0x7C;   // PLL enabled, 3x, 16MHz internal osc, SCS external
         OSCCONbits.SPLLMULT = 1;   // 1=3x, 0=4x
         ACTCON = 0x90;   // Clock recovery on, Clock Recovery enabled; SOF packet
-    #elseW
+    #else
         OSCCON = 0x3C;   // PLL enabled, 3x, 16MHz internal osc, SCS external
         OSCCONbits.SPLLMULT = 0;   // 1=3x, 0=4x
         ACTCON = 0x00;   // Clock recovery off, Clock Recovery enabled; SOF packet

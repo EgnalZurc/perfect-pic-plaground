@@ -3,12 +3,13 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>USB Device - CDC - Serial Emulator</name>
+            <name>USB Device - CDC - Serial Emulator -  C18 - PICDEM FSUSB</name>
+            <creation-uuid>d33918b9-f608-4e08-b16f-977c73459ffe</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
             <cpp-extensions/>
             <header-extensions>h</header-extensions>
-            <sourceEncoding>UTF-8</sourceEncoding>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
         </data>
     </configuration>
