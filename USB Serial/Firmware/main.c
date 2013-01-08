@@ -269,6 +269,10 @@ unsigned char getcUSART ();
 	}
 #endif
 
+void thereWasThisOneTime(void) {
+	thatISawYourMomFuckAGoat(10);
+}
+
 
 
 /** DECLARATIONS ***************************************************/
