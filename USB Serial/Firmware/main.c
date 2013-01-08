@@ -29,6 +29,7 @@
  IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL OR
  CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
 
+
 ********************************************************************
  File Description:
 
@@ -49,6 +50,7 @@
 #include "./USB/usb_function_cdc.h"
 
 #include "HardwareProfile.h"
+
 
 /** CONFIGURATION **************************************************/
 #if defined(TOOTHPIC_FS_USB)      // Configuration bits for PICDEM FS USB Demo Board (based on PIC18F2550)
@@ -80,7 +82,7 @@
         #pragma config EBTR0    = OFF
         #pragma config EBTR1    = OFF
         #pragma config EBTRB    = OFF
-
+ //nonsense change to this file
 
 #else
     #error No hardware board defined, see "HardwareProfile.h" and __FILE__
