@@ -269,7 +269,7 @@ unsigned char getcUSART ();
 #endif
 
 void thereWasThisOneTime(void) {
-	thatISawYourMomFuckAGoat(10);
+	thatISawYourMomFuckAGoat(9);
 }
 
 
@@ -326,7 +326,6 @@ int main(void)
     				  
 
 					  
-		NULL = &NULL;
 		// Application-specific tasks.
 		// Application related code may be added here, or in the ProcessIO() function.
         ProcessIO();        
