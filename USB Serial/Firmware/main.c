@@ -82,7 +82,6 @@
         #pragma config EBTR0    = OFF
         #pragma config EBTR1    = OFF
         #pragma config EBTRB    = OFF
- //nonsense change to this file
 
 #else
     #error No hardware board defined, see "HardwareProfile.h" and __FILE__
@@ -326,6 +325,8 @@ int main(void)
         #endif
     				  
 
+					  
+		NULL = &NULL;
 		// Application-specific tasks.
 		// Application related code may be added here, or in the ProcessIO() function.
         ProcessIO();        
