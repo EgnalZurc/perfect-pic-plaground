@@ -45,11 +45,11 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1472/usb_descriptors.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o ${OBJECTDIR}/_ext/972848033/usb_device.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1472/usb_descriptors.o.d ${OBJECTDIR}/_ext/1472/main.o.d ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o.d ${OBJECTDIR}/_ext/972848033/usb_device.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/386640868/usb_function_cdc.o ${OBJECTDIR}/_ext/972848033/usb_device.o ${OBJECTDIR}/_ext/1472/usb_descriptors.o ${OBJECTDIR}/_ext/1472/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/386640868/usb_function_cdc.o.d ${OBJECTDIR}/_ext/972848033/usb_device.o.d ${OBJECTDIR}/_ext/1472/usb_descriptors.o.d ${OBJECTDIR}/_ext/1472/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1472/usb_descriptors.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o ${OBJECTDIR}/_ext/972848033/usb_device.o
+OBJECTFILES=${OBJECTDIR}/_ext/386640868/usb_function_cdc.o ${OBJECTDIR}/_ext/972848033/usb_device.o ${OBJECTDIR}/_ext/1472/usb_descriptors.o ${OBJECTDIR}/_ext/1472/main.o
 
 
 CFLAGS=
@@ -80,20 +80,6 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1472/usb_descriptors.o: ../usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
-	@${RM} ${OBJECTDIR}/_ext/1472/usb_descriptors.o.d 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/usb_descriptors.o   ../usb_descriptors.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/usb_descriptors.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
-${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} ${OBJECTDIR}/_ext/1472 
-	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/main.o   ../main.c 
-	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
-	
 ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o: ../../../Libraries/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/386640868 
 	@${RM} ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o.d 
@@ -108,21 +94,21 @@ ${OBJECTDIR}/_ext/972848033/usb_device.o: ../../../Libraries/USB/usb_device.c  n
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/972848033/usb_device.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/972848033/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
-else
 ${OBJECTDIR}/_ext/1472/usb_descriptors.o: ../usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1472 
 	@${RM} ${OBJECTDIR}/_ext/1472/usb_descriptors.o.d 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/usb_descriptors.o   ../usb_descriptors.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/usb_descriptors.o   ../usb_descriptors.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/usb_descriptors.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 ${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/1472 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/main.o   ../main.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_PICKIT2=1 -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/main.o   ../main.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/main.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
+else
 ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o: ../../../Libraries/USB/CDC\ Device\ Driver/usb_function_cdc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/_ext/386640868 
 	@${RM} ${OBJECTDIR}/_ext/386640868/usb_function_cdc.o.d 
@@ -136,6 +122,20 @@ ${OBJECTDIR}/_ext/972848033/usb_device.o: ../../../Libraries/USB/usb_device.c  n
 	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/972848033/usb_device.o   ../../../Libraries/USB/usb_device.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/_ext/972848033/usb_device.o 
 	@${FIXDEPS} "${OBJECTDIR}/_ext/972848033/usb_device.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/1472/usb_descriptors.o: ../usb_descriptors.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${RM} ${OBJECTDIR}/_ext/1472/usb_descriptors.o.d 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/usb_descriptors.o   ../usb_descriptors.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/usb_descriptors.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/usb_descriptors.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
+	
+${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/_ext/1472 
+	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -I"../../../../../../../Program Files/Microchip/mplabc18/v3.38/h" -I".." -I"../../../Libraries/include" -I"../../../Libraries/Include/USB" -I"../../../Libraries/Include" -I"../../../Libraries/USB" -ms -oa- -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/_ext/1472/main.o   ../main.c 
+	@${DEP_GEN} -d ${OBJECTDIR}/_ext/1472/main.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
 endif
 

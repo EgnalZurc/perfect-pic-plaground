@@ -1,10 +1,5 @@
-<<<<<<< .mine
-MPLINK 4.44, Linker
-Linker Map File - Created Mon Jan 07 19:22:59 2013
-=======
 MPLINK 4.45, Linker
-Linker Map File - Created Mon Jan 07 19:26:21 2013
->>>>>>> .r55
+Linker Map File - Created Mon Jan 07 23:10:09 2013
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -227,7 +222,6 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x0030a0    program     extern C:\Users\denwab
         _D1KTCYXCODE_0010   0x004458    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
         _D1KTCYXCODE_0016   0x00445e    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
        ___return_lbl00000   0x00428a    program     static                          
-       ___return_lbl00000   0x00428a    program     static                          
        ___return_lbl00000   0x00100c    program     static                          
        ___return_lbl00000   0x0043e6    program     static                          
        ___return_lbl00000   0x000004    program     static                          
@@ -235,69 +229,6 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x0030a0    program     extern C:\Users\denwab
        ___return_lbl00001   0x0044a2    program     static                          
        ___return_lbl00002   0x004074    program     static                          
        ___return_lbl00002   0x0044f6    program     static                          
-<<<<<<< .mine
-               __config_0   0x300000    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_1   0x300001    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-              __config_10   0x30000c    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-              __config_11   0x30000d    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_2   0x300002    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_3   0x300003    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_4   0x300005    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_5   0x300006    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_6   0x300008    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_7   0x300009    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_8   0x30000a    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-               __config_9   0x30000b    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-                   __init   0x004526    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x003a7e    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_1   0x003a86    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_10   0x003b3a    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_11   0x003b48    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_12   0x003b5e    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_13   0x003b78    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_14   0x003b90    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_15   0x003ba0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_16   0x003bb6    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_17   0x003bc8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_18   0x003bda    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_19   0x003be4    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_2   0x003a90    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_20   0x003bf4    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_21   0x003c04    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_22   0x003c14    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_23   0x003c20    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_24   0x003c2e    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_25   0x003c36    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_26   0x003c40    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_27   0x003c4a    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_28   0x003c52    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_29   0x003c60    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_3   0x003a9a    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_30   0x003c7c    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_31   0x003c96    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_32   0x003cb0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_33   0x003cc8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_34   0x003cd2    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_35   0x003ce0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_36   0x003ce8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_37   0x003cf2    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_38   0x003d02    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_39   0x003d10    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_4   0x003ab2    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_40   0x003d1c    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_41   0x003d28    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_42   0x003d30    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_43   0x003d3a    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_44   0x003d40    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_45   0x003d4a    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  __pa_46   0x003d56    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_5   0x003ac6    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_6   0x003ae2    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_7   0x003aec    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_8   0x003af8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                   __pa_9   0x003b1a    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-               __string_0   0x00451f    program     static C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\main.c
-=======
                __config_0   0x300000    program     static C:\Users\denwabangohan\Documents\Pic_Projects\USB PS2 controller MPLABX\Firmware\main.c
                __config_1   0x300001    program     static C:\Users\denwabangohan\Documents\Pic_Projects\USB PS2 controller MPLABX\Firmware\main.c
               __config_10   0x30000c    program     static C:\Users\denwabangohan\Documents\Pic_Projects\USB PS2 controller MPLABX\Firmware\main.c
@@ -359,7 +290,6 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x0030a0    program     extern C:\Users\denwab
                    __pa_8   0x003af8    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                    __pa_9   0x003b1a    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                __string_0   0x00451f    program     static C:\Users\denwabangohan\Documents\Pic_Projects\USB PS2 controller MPLABX\Firmware\main.c
->>>>>>> .r55
               __tmplbl_42   0x003c14    program     static                          
               __tmplbl_43   0x003a5c    program     static                          
               __tmplbl_44   0x003a42    program     static                          
@@ -898,23 +828,6 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x0030a0    program     extern C:\Users\denwab
                      loop   0x0043ae    program     static                          
                    _false   0x0043e2    program     static                          
        ___return_lbl00000   0x0043e6    program     static                          
-<<<<<<< .mine
-                 putsUART   0x0043e8    program     extern C:\Users\Studiown\Desktop\perfect-pic-plaground-commitable\USB PS2 controller MPLABX\Firmware\SW_UART\putsuart.c
-                  isdigit   0x004424    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                   jMatch   0x004444    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x004446    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-              Delay1KTCYx   0x004448    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x004452    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x004454    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x004458    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x00445e    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x004468    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-               zero_block   0x004476    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                   loop_h   0x004476    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                compare_l   0x00447e    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                   loop_l   0x004480    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                 _startup   0x004488    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-=======
                  putsUART   0x0043e8    program     extern C:\Users\denwabangohan\Documents\Pic_Projects\USB PS2 controller MPLABX\Firmware\SW_UART\putsuart.c
                   isdigit   0x004424    program     extern E:\3.44\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
                    jMatch   0x004444    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
@@ -930,7 +843,6 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x0030a0    program     extern C:\Users\denwab
                 compare_l   0x00447e    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
                    loop_l   0x004480    program     static E:\3.44\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
                  _startup   0x004488    program     extern E:\3.44\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
->>>>>>> .r55
                      loop   0x004498    program     static                          
        ___return_lbl00001   0x0044a2    program     static                          
               _usart_putc   0x0044a4    program     extern E:\3.44\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
