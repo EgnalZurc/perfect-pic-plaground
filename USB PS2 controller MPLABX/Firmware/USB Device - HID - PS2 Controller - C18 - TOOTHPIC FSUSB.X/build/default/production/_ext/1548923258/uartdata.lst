@@ -1,8 +1,4 @@
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  1
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  1
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -61,11 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00212      INCLUDE <p18F2620.INC>
                       00213   ENDIF
                       00214   IFDEF __18F2680
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  2
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  2
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -124,11 +116,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00265   IFDEF __18F43K20
                       00266      INCLUDE <p18F43K20.INC>
                       00267   ENDIF
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  3
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  3
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -187,11 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00318   ENDIF
                       00319   IFDEF __18F4510
                       00320      INCLUDE <p18F4510.INC>
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  4
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  4
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -250,11 +234,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00371      INCLUDE <p18F45K50.INC>
                       00372   ENDIF
                       00373   IFDEF __18F45K80
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  5
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  5
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -313,11 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00424   IFDEF __18F6393
                       00425      INCLUDE <p18F6393.INC>
                       00426   ENDIF
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  6
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  6
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -376,11 +352,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00477   ENDIF
                       00478   IFDEF __18F65K80
                       00479      INCLUDE <p18F65K80.INC>
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  7
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  7
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -439,11 +411,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00530      INCLUDE <p18F66J93.INC>
                       00531   ENDIF
                       00532   IFDEF __18F66J94
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  8
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  8
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -502,11 +470,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00583   IFDEF __18F8390
                       00584      INCLUDE <p18F8390.INC>
                       00585   ENDIF
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE  9
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE  9
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE  9
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -565,11 +529,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00636   ENDIF
                       00637   IFDEF __18F65J94
                       00638      INCLUDE <p18F65J94.INC>
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 10
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 10
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 10
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -628,11 +588,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00689      INCLUDE <p18F86J16.INC>
                       00690   ENDIF
                       00691   IFDEF __18F86J50
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 11
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 11
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 11
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -691,11 +647,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00742   IFDEF __18F87J72
                       00743      INCLUDE <p18F87J72.INC>
                       00744   ENDIF
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 12
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 12
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 12
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -754,11 +706,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00795   ENDIF
                       00796   IFDEF __18LF24J50
                       00797      INCLUDE <p18LF24J50.INC>
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 13
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 13
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 13
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -817,11 +765,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00848      INCLUDE <p18LF43K22.INC>
                       00849   ENDIF
                       00850   IFDEF __18LF44J10
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 14
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 14
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 14
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -880,11 +824,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00901   IFDEF __18LF47J53
                       00902      INCLUDE <p18LF47J53.INC>
                       00903   ENDIF
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 15
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 15
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 15
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -908,11 +848,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000                00007         GLOBAL  uartdata, BitCount
                       00008         
                       00009         END
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 16
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 16
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 16
 
 
 SYMBOL TABLE
@@ -971,11 +907,7 @@ BRG16                             00000003
 BRGH                              00000002
 BSR                               00000FE0
 BTOEE                             00000004
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 17
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 17
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 17
 
 
 SYMBOL TABLE
@@ -1034,11 +966,7 @@ CMIP                              00000006
 CRC16EE                           00000002
 CRC16EF                           00000002
 CRC5EE                            00000001
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 18
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 18
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 18
 
 
 SYMBOL TABLE
@@ -1097,11 +1025,7 @@ EPCONDIS                          00000003
 EPHSHK                            00000004
 EPINEN                            00000001
 EPOUTEN                           00000002
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 19
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 19
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 19
 
 
 SYMBOL TABLE
@@ -1160,11 +1084,7 @@ IDLEIF                            00000004
 IDLEN                             00000007
 INDF0                             00000FEF
 INDF1                             00000FE7
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 20
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 20
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 20
 
 
 SYMBOL TABLE
@@ -1223,11 +1143,7 @@ LATB4                             00000004
 LATB5                             00000005
 LATB6                             00000006
 LATB7                             00000007
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 21
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 21
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 21
 
 
 SYMBOL TABLE
@@ -1286,11 +1202,7 @@ PCFG2                             00000002
 PCFG3                             00000003
 PCL                               00000FF9
 PCLATH                            00000FFA
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 22
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 22
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 22
 
 
 SYMBOL TABLE
@@ -1349,11 +1261,7 @@ RA4                               00000004
 RA5                               00000005
 RA6                               00000006
 RB0                               00000000
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 23
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 23
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 23
 
 
 SYMBOL TABLE
@@ -1412,11 +1320,7 @@ SOFIE                             00000006
 SOFIF                             00000006
 SPBRG                             00000FAF
 SPBRGH                            00000FB0
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 24
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 24
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 24
 
 
 SYMBOL TABLE
@@ -1475,11 +1379,7 @@ T1OSO                             00000000
 T1RUN                             00000006
 T1SYNC                            00000002
 T2CKPS0                           00000000
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 25
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 25
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 25
 
 
 SYMBOL TABLE
@@ -1538,11 +1438,7 @@ TOSL                              00000FFD
 TOSU                              00000FFF
 TOUTPS0                           00000003
 TOUTPS1                           00000004
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 26
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 26
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 26
 
 
 SYMBOL TABLE
@@ -1601,11 +1497,7 @@ UEP0                              00000F70
 UEP1                              00000F71
 UEP10                             00000F7A
 UEP11                             00000F7B
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 27
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 27
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 27
 
 
 SYMBOL TABLE
@@ -1664,11 +1556,7 @@ _BOR_ON_2L                        000000FF
 _BOR_ON_ACTIVE_2L                 000000FD
 _BOR_SOFT_2L                      000000FB
 _CCP2MX_OFF_3H                    000000FE
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 28
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 28
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 28
 
 
 SYMBOL TABLE
@@ -1727,11 +1615,7 @@ _FOSC_HSPLL_HS_1H                 000000FE
 _FOSC_HS_1H                       000000FC
 _FOSC_INTOSCIO_EC_1H              000000F8
 _FOSC_INTOSC_EC_1H                000000F9
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 29
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 29
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 29
 
 
 SYMBOL TABLE
@@ -1790,11 +1674,7 @@ _WDTPS_4_2H                       000000E5
 _WDTPS_512_2H                     000000F3
 _WDTPS_64_2H                      000000ED
 _WDTPS_8192_2H                    000000FB
-<<<<<<< .mine
-MPASM  5.46                      UARTDATA.ASM   1-7-2013  19:22:56         PAGE 30
-=======
-MPASM  5.47                      UARTDATA.ASM   1-7-2013  19:26:19         PAGE 30
->>>>>>> .r55
+MPASM  5.47                      UARTDATA.ASM   1-7-2013  21:55:16         PAGE 30
 
 
 SYMBOL TABLE

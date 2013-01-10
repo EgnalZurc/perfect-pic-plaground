@@ -1,0 +1,17 @@
+Header:
+0x01 0x42 0x00 0x00 0x00
+0xff 0x41 0x5a 0xff 0xff
+
+Commands:
+0x43: Enter/exit configuration mode
+	You can tell the controller to respond with more or less info about the buttons pressed
+
+
+Header:
+PIC->CTRL:	0x01 command 0x00
+CTRL->PIC:	0xFF depends 0x5A
+
+
+
+width of 3=.557in
+approx .178in pitch
