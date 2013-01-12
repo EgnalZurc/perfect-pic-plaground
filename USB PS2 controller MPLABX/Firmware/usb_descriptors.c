@@ -239,7 +239,7 @@ sizeof(sd000),USB_DESCRIPTOR_STRING,{0x0409
 //Manufacturer string descriptor
 ROM struct{BYTE bLength;BYTE bDscType;WORD string[25];}sd001={
 sizeof(sd001),USB_DESCRIPTOR_STRING,
-{'M','i','c','r','o','c','h','i','p',' ',
+{'C','a','l','p','u','s','c','i','k',' ',
 'T','e','c','h','n','o','l','o','g','y',' ','I','n','c','.'
 }};
 
