@@ -167,7 +167,7 @@
 	#define PS2_Circle		PS2_byte2.bit5
 	#define PS2_Square		PS2_byte2.bit7
 	#define PS2_X			PS2_byte2.bit6
-	#define PS2_Triangle	PS2_byte2.bit4
+	#define PS2_Triangle            PS2_byte2.bit4
 	#define PS2_RJX			PS2_byte3.byte
 	#define PS2_RJY			PS2_byte4.byte
 	#define PS2_LJX			PS2_byte5.byte

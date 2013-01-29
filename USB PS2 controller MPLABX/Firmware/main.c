@@ -54,9 +54,9 @@
 /** CONFIGURATION **************************************************/
 #if defined(TOOTHPIC_FS_USB)      // Configuration bits for PICDEM FS USB Demo Board (based on PIC18F2550)
         #pragma config PLLDIV   = 4         // (16 MHz crystal on PICDEM FS USB board)
-        #pragma config CPUDIV   = OSC4_PLL6   
+        #pragma config CPUDIV   = OSC1_PLL2
         #pragma config USBDIV   = 2         // Clock source from 96MHz PLL/2
-        #pragma config FOSC     = HSPLL_HS
+        #pragma config FOSC     = HS
         #pragma config FCMEN    = OFF
         #pragma config IESO     = OFF
         #pragma config PWRT     = OFF
@@ -730,10 +730,21 @@ void Joystick(void)
 					analJoys[i] = 0x80;
            }
 
+//           for (i=0;i<12;i++) {
+//               ps2_txrx(0x00, &PS2_pressure[i]);
+//               buttonsPressed[i] = !!PS2_pressure[i];
+//           }
+
            for (i=0;i<12;i++) {
-               ps2_txrx(0x00, &PS2_pressure[i]);
-               buttonsPressed[i] = !!PS2_pressure[i];
+               buttonsPressed[i] = 0;
            }
+
+           buttonsPressed[6] = !(digital2 & 0x40);
+           buttonsPressed[7] = !(digital2 & 0x80);
+           buttonsPressed[4] = !(digital2 & 0x10);
+           buttonsPressed[8] = !(digital2 & 0x20);
+           buttonsPressed[11] = !(digital2 & 0x02);
+           
            pin_ATT = 1;
 
            print_buffer();
@@ -741,18 +752,18 @@ void Joystick(void)
            WriteUART(0x0D);
 			
           //Indicate that the "x" button is pressed, but none others
-          joystick_input.members.buttons.x = buttonsPressed[6];
-          joystick_input.members.buttons.square = buttonsPressed[7];
-          joystick_input.members.buttons.o = buttonsPressed[5];
-          joystick_input.members.buttons.triangle = buttonsPressed[4];
-          joystick_input.members.buttons.L1 = buttonsPressed[8];
-          joystick_input.members.buttons.R1 = buttonsPressed[9];
-          joystick_input.members.buttons.L2 = buttonsPressed[10];
-          joystick_input.members.buttons.R2 = buttonsPressed[11];
-          joystick_input.members.buttons.select = !(digital1 & 0x01);
-          joystick_input.members.buttons.start = !(digital1 & 0x08);
-          joystick_input.members.buttons.left_stick = !(digital1 & 0x02);
-          joystick_input.members.buttons.right_stick = !(digital1 & 0x04);
+          joystick_input.members.buttons.x =            buttonsPressed[6];
+          joystick_input.members.buttons.square =       buttonsPressed[7];
+          joystick_input.members.buttons.o =            buttonsPressed[5];
+          joystick_input.members.buttons.triangle =     buttonsPressed[4];
+          joystick_input.members.buttons.L1 =           buttonsPressed[8];
+          joystick_input.members.buttons.R1 =           buttonsPressed[9];
+          joystick_input.members.buttons.L2 =           buttonsPressed[10];
+          joystick_input.members.buttons.R2 =           buttonsPressed[11];
+          joystick_input.members.buttons.select =       !(digital1 & 0x01);
+          joystick_input.members.buttons.start =        !(digital1 & 0x08);
+          joystick_input.members.buttons.left_stick =   !(digital1 & 0x02);
+          joystick_input.members.buttons.right_stick =  !(digital1 & 0x04);
           joystick_input.members.buttons.home = 0;
 
 				  
